@@ -12,7 +12,6 @@ const AnecdoteList = () => {
 
   return (
     <div>
-      <h2>Anecdotes</h2>
         {anecdotes
           .slice()
           .sort((a, b) => b.votes - a.votes)
