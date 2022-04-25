@@ -41,7 +41,7 @@ const anecdoteSlice = createSlice({
         ...anecdoteToVoteFor, votes: anecdoteToVoteFor.votes + 1
       }
       return state.map(anecdote => anecdote.id !== id ? anecdote : addVote)
-    }
+    },
   }
 })
 
