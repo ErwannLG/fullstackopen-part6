@@ -5,14 +5,6 @@ const anecdoteSlice = createSlice({
   name: 'anecdotes',
   initialState: [],
   reducers: {
-    // voteFor(state, action) {
-    //   const id = action.payload
-    //   const anecdoteToVoteFor = state.find(a => a.id === id)
-    //   const addVote = {
-    //     ...anecdoteToVoteFor, votes: anecdoteToVoteFor.votes + 1
-    //   }
-    //   return state.map(anecdote => anecdote.id !== id ? anecdote : addVote)
-    // },
     appendAnecdote(state, action) {
       state.push(action.payload)
     },
